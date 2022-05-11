@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Faculdade de Tecnologia de Campinas</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="testing.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+      @media all and (min-width: 992px) {
+        .navbar .nav-item .dropdown-menu{ display: none; }
+        .navbar .nav-item:hover .dropdown-menu{ 
+          display: block; 
+          font-style: bold;
+          background-color: #dc3545;
+        }
+        .navbar .nav-item:hover .dropdown-menu button.dropdown-item { 
+          color: rgb(255, 255, 255);
+        }
+        .navbar .nav-item:hover .dropdown-menu button.dropdown-item:hover { 
+          color: rgb(119, 20, 20);
+        }
+        .navbar .nav-item .dropdown-menu{ margin-top:0; color: rgb(156, 36, 36); }
+      }
+
+      li.last {
+        padding-right: 290px;
+      }
+
+      span.expand {
+        padding-right: 122px;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logoSite2.png" alt="logo Fatec" width="80" height="45">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Institucional
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Aluno</button></li>
+                  <li><button class="dropdown-item" type="button">Docentes</button></li>
+                  <li><button class="dropdown-item" type="button">Centro Paula Souza</button></li>
+                  <li><button class="dropdown-item" type="button">Contato</button></li>
+                  <li><button class="dropdown-item" type="button">Endereço</button></li>
+                  <li><button class="dropdown-item" type="button">Boletim FatecNews</button></li>
+                  <li><button class="dropdown-item" type="button">Regimento Fatec</button></li>
+                  <li><button class="dropdown-item" type="button">Regimento Fatec</button></li>
+                  <li><button class="dropdown-item" type="button">Plano de Desenvolvimento Institucional - PDI</button></li>
+                  <li><button class="dropdown-item" type="button">Sobre</button></li>
+                  <li><button class="dropdown-item" type="button">Eventos</button></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Biblioteca</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">CPA</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Graduação
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Cursos</button></li>
+                  <li><button class="dropdown-item" type="button">Estágio Supervisionado</button></li>
+                  <li><button class="dropdown-item" type="button">Iniciação Científica</button></li>
+                  <li><button class="dropdown-item" type="button">Trabalho de Graduação</button></li>
+                  <li><button class="dropdown-item" type="button">Vestibular</button></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Concursos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Processo Seletivo Simplificado para Docente</button></li>
+                  <li><button class="dropdown-item" type="button">Concurso Público para Docente</button></li>
+                  <li><button class="dropdown-item" type="button">Concurso Público para Auxiliar Docente</button></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item last">
+              <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Revista
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Revista Brasileira de Processos Químicos</button></li>
+                  <li><button class="dropdown-item" type="button">Revista Brasileira em Tecnologia da Informação</button></li>
+                </ul>
+              </div>
+            </li>
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              </form>
+            </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/banner_vestibular.jpeg" class="img-thumbnail d-block w-100" alt="Imagem vestibular Fatec.">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/banner_site_GE.jpeg" class="img-thumbnail d-block w-100" alt="Banner curso Gestão Empresarial.">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/pq.jpeg" class="img-thumbnail d-block w-100" alt="Banner curso Processos Químicos">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/gti.jpeg" class="img-thumbnail d-block w-100" alt="Banner curso Gestão da Tecnologia da Informação.">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+    <div class="row g-5">
+      <div class="col-md-8">
+        <h3 class="pb-4 mb-4 fst-italic border-bottom">Acompanhe nossas últimas notícias</h3>
+  
+        <article class="blog-post">
+          <h2 class="blog-post-title">Imposto de Renda 2022</h2>  
+          <div class="box col-md-4">
+            <img src="assets/img/WhatsApp_Image_2022-04-05_at_09.25.50.jpeg" alt="Informativo Imposto de Renda">
+          </div>
+          <br>
+        </article>
+  
+        <article class="blog-post">
+          <h2 class="blog-post-title tx-dark">RELAÇÃO DOS CANDIDATOS CONVOCADOS NA 7ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</h2>
+          <p>Para realização da matrícula, o candidato deverá acessar o link enviado por e-mail e inserir no sistema de Matrícula Remota a documentação necessária.</p>
+          <hr>
+          <br>
+        </article>
+  
+        <article class="blog-post">
+          <h2 class="blog-post-title">RELAÇÃO DOS CANDIDATOS CONVOCADOS NA 6ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</h2>
+  
+          <p>Para realização da matrícula, o candidato deverá acessar o link enviado por e-mail e inserir no sistema de Matrícula Remota a documentação necessária.</p>
+          <hr>
+          <br>
+        </article>
+        <article class="blog-post">
+          <h2 class="blog-post-title">Inscrições INOVA</h2>
+  
+          <div class="box col-md-4 img-fluid">
+            <img src="assets/img/WhatsApp_Image_2022-02-22_at_13.31.22.jpeg" alt="Informativo INOVA" width="650" height="500">
+          </div>
+          <br>
+        </article>
+        <article class="blog-post">
+          <h2 class="blog-post-title">RELAÇÃO DOS CANDIDATOS CONVOCADOS NA 5ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</h2>
+  
+          <p>Para realização da matrícula, o candidato deverá acessar o link enviado por e-mail e inserir no sistema de Matrícula Remota a documentação necessária.</p>
+          <hr>
+          <br>
+        </article>
+        <article class="blog-post">
+          <h2 class="blog-post-title">RELAÇÃO DOS CANDIDATOS CONVOCADOS NA 4ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</h2>  
+          <p>O candidato deverá acessar o link enviado por e-mail e inserir no sistema de Matrícula Remota a documentação necessária.</p>
+          <hr>
+          <br>
+        </article>
+        <article class="blog-post">
+          <h2 class="blog-post-title">RELAÇÃO DOS CANDIDATOS CONVOCADOS NA 3ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</h2>  
+          <p>Para realização da matrícula, o candidato deverá acessar o link enviado por e-mail e inserir no sistema de Matrícula Remota a documentação necessária.</p>
+          <hr>
+          <br>
+        </article>
+        <article class="blog-post">
+          <h2 class="blog-post-title">Informativo nº 01/2022 - Faculdade de Tecnologia de Campinas</h2>  
+          <p>Informativo nº 01/2022 - Faculdade de Tecnologia de Campinas. Atenção Alunos Considerando o planejamento das atividades educacionais para 2022, em atendimento ao Plano São Paulo do Governo do Estado de São Paulo, que reflete na retomada das aulas presenciais para o 1º semestre de 2022, observadas as orientações do Ministério da Saúde e da Agência Nacional de Vigilância Sanitária, bem como as diretrizes da Secretaria de Estado da Saúde.</p>
+          <hr>
+          <br>
+        </article>
+        <article class="blog-post">
+          <h2 class="blog-post-title">Cronograma Processo Seletivo Vestibular 1º Semestre 2022</h2>  
+          <img src="assets/img/cronograma_vestibular_2022.jpg" class="img-fluid" alt="Cronograma Vestibular 2022">
+          <hr>
+          <br>
+        </article>
+        <article class="blog-post">
+          <h2 class="blog-post-title">WebSAI 2021</h2>  
+          <img src="assets/img/Anúncio-WebSAI-2021-F.png" class="img-fluid" alt="Anuncio WebSAI">
+          <hr>
+          <br>
+        </article>
+        <article class="blog-post">
+          <h2 class="blog-post-title">Edital de Abertura de Inscrições para o Curso de español </h2>  
+          <p>Edital de Abertura de Inscrições para o Curso de español - conociendo Chile na modalidade virtual, oferecido pelo DUOC_UC - Chile. O Centro Estadual de Educação Tecnológica Paula Souza (CEETEPS), por meio de sua Assessoria de Relações Internacionais (ARInter) - Assessoria Técnica da Superintendência - no uso de suas atribuições, torna público aos interessados que estão abertas as inscrições para o Curso de español - conociendo Chile na modalidade virtual, em conformidade com os dispositivos do... <button type="button" class="btn btn-secondary">Leia mais</button></p>
+          <hr>
+          <br>
+        </article>
+
+        <nav class="blog-pagination">
+          <a class="btn btn-outline-secondary" href="#" tabindex="-1" aria-disabled="true">Recentes</a>
+          <a class="btn btn-outline-primary" href="#">1</a>
+          <a class="btn btn-outline-primary" href="#">2</a>
+          <a class="btn btn-outline-primary" href="#">3</a>
+          <a class="btn btn-outline-primary" href="#">Antigos</a>
+        </nav>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="fst-italic">Secretaria Acadêmica</h4>
+            <ul class="list-group">
+              <li class="list-group-item">Calendário Acadêmico 2022</li>
+              <li class="list-group-item">Estacionamento</li>
+              <li class="list-group-item">Empresas Parceiras</li>
+              <li class="list-group-item">Regimento Geral das FATECS</li>
+              <li class="list-group-item">Regulamento Geral dos Cursos de Graduação</li>
+              <li class="list-group-item">Sistema de Reserva de Salas de Aula</li>
+              <li class="list-group-item">Provas e Gabaritos dos Vestibulares</li>
+              <li class="list-group-item">Edital de Monitoria</li>
+            </ul>
+          </div>
+  
+          <div class="p-4">
+            <h4 class="fst-italic">Últimas notícias</h4>
+            <ul class="list-unstyled mb-1">
+              <li>Imposto de renda 2022</li>
+              <li>RELAÇÃO DOS CANDIDATOS CONVOCADOS NA 7ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</li>
+              <li>RELAÇÃO DOS CANDIDATOS CONVOCADOS NA 6ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</li>
+              <li>Inscrições INOVA</li>
+              <li>RELAÇÃO DOS CANDIDATOS CONVOCADOS NA 5ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</li>
+              <li>4ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</li>
+              <li>3ª CHAMADA DO VESTIBULAR 1º SEMESTRE DE 2022</li>
+              <li>Informativo nº 01/2022 - Faculdade de Tecnologia de Campinas</li>
+              <li>Cronograma Processo Seletivo Vestibular 1º Semestre 2022</li>
+              <li>WebSAI 2021</li>
+            </ul>
+          </div>
+  
+          <div class="p-4">
+            <h4 class="fst-italic">Inova</h4>
+            <ol class="list-unstyled">
+              <li>MOOC</li>
+              <li>Escopo de Ficha de Inscrição</li>
+              <li>Áreas e sub áreas enquadramento do projeto</li>
+            </ol>
+          </div>
+          <div class="p-4">
+            <h4 class="fst-italic">Links Externos</h4>
+            <ol class="list-unstyled">
+              <li><a href="">Clube de Arduino</a></li>
+              <li><a href="">Ciência sem Fronteiras</a></li>
+              <li><a href="">CNPQ</a></li>
+              <li><a href="">Currículo Lattes</a></li>
+              <li><a href="">EBC Notícias</a></li>
+              <li><a href="">Emprega Campinas</a></li>
+              <li><a href="">EMTU</a></li>
+              <li><a href="">FAPESP</a></li>
+              <li><a href="">Ministério da Educação - MEC</a></li>
+              <li><a href="">SBC</a></li>
+              <li><a href="#">Conselho Regional de Química</a></li>
+            </ol>
+          </div>
+          <aside>
+            <img src="assets/img/Selo_2018-2019-01.jpg" class="img-fluid" alt="Selo Responsabilidade Social nas IES">
+          </aside>
+          <div class="p-4">
+            <h4 class="fst-italic">Parceiros Fatec</h4>
+            <aside>
+              <ol class="list-unstyled">
+                <li><a href="">Eurofins</a></li>
+                <li><a href="">IBM</a></li>
+                <li><a href="">For Medical</a></li>
+                <li><a href="">CNPEM</a></li>
+                <li><a href="">Bosch</a></li>
+                <li><a href="">AOKI</a></li>
+                <li><a href="">Unicamp</a></li>
+                <li><a href="">CIEE</a></li>
+                <li><a href="">Donely</a></li>
+                <li><a href="">Choice</a></li>
+                <li><a href="">I.Systems</a></li>
+                <li><a href="">CP4P</a></li>
+              </ol>
+            </aside>
+          </div>
+          <aside>
+            <h3>TV Nube: Dica de Carreiras</h3>
+            <img src="assets/img/tvnube.jpg" class="img-fluid" alt="TV Nube: Dica de Carreiras">
+          </aside>
+        </div>
+      </div>
+      <div class="d-flex p-2 bd-highlight"></div>
+      <div class="container">
+        <div class="position-relative row">
+          <div class="text-center row col md-4" style="display: flex; flex-flow: row wrap; list-style: none; margin: 0; padding: 0; text-rendering: optimizespeed;">
+            <h2>
+              <i class="fa fa-university sample-icons"></i>
+              <hr>
+              <h3>Fatec Campinas</h3>
+              <p>Sobre</p>
+              <p>Endereço</p>
+              <p>Centro Paula Souza</p>
+            </h2>
+          </div>
+          <div class="row text-center col md-4" style="display: flex; flex-flow: row wrap; list-style: none; margin: 0; padding: 0; text-rendering: optimizespeed;">
+            <h2 style="margin: 0 auto;">
+              <i class="fa fa-globe sample-icons"></i>
+              <hr>
+              <h3>Acadêmico</h3>
+              <p>Docentes</p>
+            </h2>
+          </div>
+          <div class="row text-center col md-4" style="display: flex; flex-flow: row wrap; list-style: none; margin: 0; padding: 0; text-rendering: optimizespeed;">
+            <h2 style="margin: 0 auto;">
+              <i class="fa fa-cubes sample-icons"></i>
+              <hr>
+              <h3>Campus Life</h3>
+              <p>Calendário de Eventos</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span><strong>Site não oficial da Fatec.</strong></span>
+      <span class="expand">2022 Fatec Campinas, SP | Telefone: +55 19 3216.6474</span>
+      <button type="button" class="btn btn-danger"><i class="fa-brands fa-facebook"></i> Facebook</button>
+      <button type="button" class="btn btn-danger"><i class="fa-solid fa-envelope"></i> E-mail</button>
+      <button type="button" class="btn btn-danger"><i class="fa-brands fa-microsoft"></i> Azure</button>
+    </div>
+  </footer>
+</main>
+    <script src="assets/js/bootstrap.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      $('ul.nav li.dropdown, li.dropdown-submenu').hover(function () {
+        $('> .dropdown-menu', $(this)).stop(true, true).delay(1000).show();
+        $(this).addClass('open');
+      }, function () {
+        $('> .dropdown-menu', $(this)).stop(true, true).delay(1000).hide();
+        $(this).removeClass('open');
+      });
+    </script>
+</body></html>
