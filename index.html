@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +14,6 @@
   <link rel="stylesheet" href="assets/css/carousel.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
-  <link rel="stylesheet" type="text/css" href="testing.css">
-  <link rel="stylesheet" type="text/css" href="css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <style>
     @media all and (min-width: 992px) {
@@ -96,7 +91,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" style="padding-right:40px">
           <img src="assets/img/logoSite2.png" alt="logo Fatec" width="80" height="45">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -179,11 +174,11 @@
               </div>
             </li>
             <div class="container-fluid">
-              <form class="d-flex" style="padding-left: 100px;">
+              <form class="d-flex" style="padding-left: 50px; padding-right: 31px;">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               </form>
             </div>
-            <li class="nav-item" style="padding-left: 300px;"><img src="assets/img/cps_logo.png" width="150" height="60" alt=""></li>
+            <li class="nav-item" style="padding-left: 125px;"><img src="assets/img/cps_logo.png" width="150" height="60" alt=""></li>
         </div>
       </div>
     </nav>
@@ -317,7 +312,7 @@
           </article>
           <article class="blog-post">
             <h2 class="blog-post-title"><a href="">WebSAI 2021</a></h2>
-            <img src="assets/img/Anúncio-WebSAI-2021-F.png" class="img-fluid" alt="Anuncio WebSAI">
+            <img src="assets/img/anuncio-websai-2021-f.png" class="img-fluid" alt="Anuncio WebSAI">
             <hr>
             <br>
           </article>
@@ -475,13 +470,10 @@
       </div>
     </footer>
   </main>
-  <script src="assets/js/bootstrap.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="assets/js/bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/bootstrap.js">
     $('ul.nav li.dropdown, li.dropdown-submenu').hover(function () {
       $('> .dropdown-menu', $(this)).stop(true, true).delay(1000).show();
       $(this).addClass('open');
