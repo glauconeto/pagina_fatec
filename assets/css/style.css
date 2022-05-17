@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Goudy+Bookletter+1911&display=swap');
+
+body {
+  font-family: 'Goudy Bookletter 1911', serif;;
+}
+
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
       display: none;
@@ -53,13 +60,22 @@ span.expand {
     }
 }
 
+article h2.blog-post-title a {
+  color: #eb1026;
+  text-decoration: none;
+}
+
 article h2 a {
-    color: #dc3545;
-    text-decoration: none;
-    border-radius: 10px;
+  font-family: 'Comic Neue', cursive;
+  color: #eb1026;
+  text-decoration: none;
+  border-radius: 7px;
+  border-color: #961510;
+  border-style:outset;
+  display: inline-block
 }
 
 article h2 a:hover {
-    color: #a82935;
-    text-decoration: underline;
+  color: #a82935;
+  text-decoration: none;
 }
