@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Goudy+Bookletter+1911&display=swap');
 
 body {
-  font-family: 'Goudy Bookletter 1911', serif;;
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+nav {
+  background-color: #d95353a3;
 }
 
 @media all and (min-width: 992px) {
@@ -36,6 +39,10 @@ body {
       margin-top: 0;
       color: rgb(156, 36, 36);
     }
+}
+
+main {
+  margin-top: 7vh;
 }
 
 li.last {
@@ -78,4 +85,8 @@ article h2 a {
 article h2 a:hover {
   color: #a82935;
   text-decoration: none;
+}
+
+nav.blog-pagination {
+  background-color: white;
 }
