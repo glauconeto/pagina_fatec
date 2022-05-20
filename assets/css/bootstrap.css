@@ -435,7 +435,7 @@ progress{
     content:"— "
 }
 .img-fluid{
-    max-width:100%;
+    max-width:80vh;
     height:auto
 }
 .img-thumbnail{
@@ -443,7 +443,7 @@ progress{
     background-color:#fff;
     border:1px solid #dee2e6;
     border-radius:.25rem;
-    max-width:100%;
+    max-width:200%;
     height:auto
 }
 .figure{
